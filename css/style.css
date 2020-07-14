@@ -1048,6 +1048,21 @@ a.goto-social:hover {
   background-color: #3f3f3f !important;
 }
 
+.category-button:active
+{
+  background-color: #3f3f3f !important;
+}
+
+.category-button:focus
+{
+  background-color: #3f3f3f !important;
+}
+
+.activeCategory
+{
+  background-color: #3f3f3f !important;
+}
+
 .all
 {
   position: relative;

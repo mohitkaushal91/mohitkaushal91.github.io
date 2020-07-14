@@ -263,7 +263,7 @@
 					<section id="work_sec" class="col-lg-10 col-md-11 col-sm-11 center-div work-wrap  sec-pad">
 						<h6>work</h6>
 						<div class="portfolio-wrap project-gallery padding-sec-lg text-center">
-							<button type="button" class="btn btn-primary category-button" data-filter="all"> All
+							<button type="button" class="btn btn-primary category-button activeCategory" data-filter="all"> All
 							</button>
 							<button type="button" class="btn btn-primary category-button" data-filter="category1">
 								HTML + CSS</button>
@@ -598,6 +598,10 @@
 					// and then, show only items with selected data-filter value
 					$(".all").filter('.' + filterValue).show("slow");
 				}
+			});
+
+			$(".category-button").click(function() {  //use a class, since your ID gets mangled
+				$(this).addClass("activeCategory").siblings().removeClass('activeCategory');      //add the class to the clicked element
 			});
 
 		});
