@@ -1034,6 +1034,7 @@ a.goto-social:hover {
   margin-bottom: 0;
 }
 
+/* custom css */
 .portfolio-wrap>button {
   background-color: #999999;
 }
@@ -1041,6 +1042,64 @@ a.goto-social:hover {
 .portfolio-wrap {
   margin-bottom: 25px;
 }
+
+.category-button:hover
+{
+  background-color: #3f3f3f !important;
+}
+
+.all
+{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.all:hover .work_img {
+  opacity: 0.3;
+}
+
+.all:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.work_img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;  
+}
+
+.text {
+  background-color: #141414;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text button
+{
+  margin-top: 25px;
+  background-color: #989898;
+}
+.text button:hover
+{
+  background-color: #3f3f3f !important;
+}
+
 
 @media(max-width: 768px) {
   .portfolio-wrap>button {
