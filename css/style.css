@@ -944,6 +944,21 @@ a.goto-social:hover {
   padding: 25px 0px;
 }
 
+.category-skills-button:active
+{
+  background-color: #3f3f3f !important;
+}
+
+.category-skills-button:focus
+{
+  background-color: #3f3f3f !important;
+}
+
+.activeSkills
+{
+  background-color: #3f3f3f !important;
+}
+
 /********Project Sec CSS********/
 .project-gallery a {
   display: block;
