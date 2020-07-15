@@ -680,7 +680,7 @@
 							<h3>Hello <span data-ng-bind="formData.inputName||'friend'"></span>, I'd love to hear from
 								you.</h3>
 							<div>
-								<form action="https://formspree.io/xoqkpnrw" name="contactform" method="post"
+								<form data-ng-submit="submit(contactform, $event)" name="contactform" method="post"
 									class="row form-horizontal" role="form">
 									<div class="form-group input--hoshi col-sm-6"
 										data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
@@ -715,7 +715,8 @@
 									</div>
 									<div class="form-group col-sm-12">
 										<div class="align-center">
-											<button type="submit" class="btn btn-default">
+											<button type="submit" class="btn btn-default"
+												data-ng-disabled="submitButtonDisabled">
 												<span class="mask"></span>
 												<span>send message</span>
 											</button>
