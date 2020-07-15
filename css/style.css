@@ -1487,6 +1487,21 @@ a.goto-social:hover {
   color: #e91e63;
 }
 
+/* custom contact css */
+
+.phonetext
+{
+  text-align: right;
+}
+
+@media(max-width: 768px)
+{
+  .phonetext
+  {
+    text-align: left;
+  }
+}
+
 /********Footer Sec CSS********/
 @-webkit-keyframes blinking {
   0% {
