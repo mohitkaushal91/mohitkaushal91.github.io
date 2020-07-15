@@ -1494,6 +1494,17 @@ a.goto-social:hover {
   text-align: right;
 }
 
+.email-direct p
+{
+  margin: 15px 0px;
+  padding: 5px;
+  font-size: 18px;
+}
+#contacthr
+{
+  width: 45%;
+}
+
 @media(max-width: 768px)
 {
   .phonetext
